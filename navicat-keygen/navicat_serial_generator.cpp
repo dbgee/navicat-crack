@@ -160,7 +160,7 @@ namespace nkg {
             throw backend_error(NKG_CURRENT_SOURCE_FILE(), NKG_CURRENT_SOURCE_LINE(), u8"EVP_CIPHER_CTX_new failed.");
         }
 
-        if (EVP_EncryptInit_ex(evp_cipher_context.get(), EVP_des_ecb(), nullptr, m_des_key, nullptr) <= 0) {     // return 1 for success and 0 for failure
+        if (EVP_EncryptInit(evp_cipher_context.get(), EVP_des_ecb(), m_des_key, nullptr) <= 0) {     // return 1 for success and 0 for failure
             throw backend_error(NKG_CURRENT_SOURCE_FILE(), NKG_CURRENT_SOURCE_LINE(), u8"EVP_EncryptInit failed.");
         }
 
