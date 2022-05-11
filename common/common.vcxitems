@@ -27,6 +27,11 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\bignum.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\bio.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\bio_chain.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\decoder_ctx.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\encoder_ctx.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\evp_cipher_ctx.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\evp_pkey.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\evp_pkey_ctx.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\openssl\rsa.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\unicorn\unicorn_handle.hpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)resource_traits\win32\map_view_ptr.hpp" />
