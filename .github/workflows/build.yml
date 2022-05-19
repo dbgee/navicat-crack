@@ -10,14 +10,9 @@ jobs:
         run: |
           pushd .
           cd ${env:VCPKG_INSTALLATION_ROOT}
-
-          git reset --hard 3b3bd424827a1f7f4813216f6b32b6c61e386b2e
-          vcpkg install openssl:x86-windows-static
-
-          git reset --hard f65d6947c7212618c00dcc99ecd53c47db97f8cd
-          vcpkg install unicorn:x86-windows-static
-
           git pull
+          vcpkg install openssl:x86-windows-static
+          vcpkg install unicorn:x86-windows-static
           vcpkg install fmt:x86-windows-static
           vcpkg install rapidjson:x86-windows-static
           vcpkg install keystone:x86-windows-static
@@ -47,14 +42,9 @@ jobs:
         run: |
           pushd .
           cd ${env:VCPKG_INSTALLATION_ROOT}
-
-          git reset --hard 3b3bd424827a1f7f4813216f6b32b6c61e386b2e
-          vcpkg install openssl:x64-windows-static
-
-          git reset --hard f65d6947c7212618c00dcc99ecd53c47db97f8cd
-          vcpkg install unicorn:x64-windows-static
-
           git pull
+          vcpkg install openssl:x64-windows-static
+          vcpkg install unicorn:x64-windows-static
           vcpkg install fmt:x64-windows-static
           vcpkg install rapidjson:x64-windows-static
           vcpkg install keystone:x64-windows-static
