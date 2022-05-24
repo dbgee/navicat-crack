@@ -75,8 +75,10 @@ namespace nkg {
         std::wcout << L" 7. MariaDB"                    << std::endl;
         std::wcout << L" 8. MongoDB"                    << std::endl;
         std::wcout << L" 9. ReportViewer"               << std::endl;
+        std::wcout << L" 10. ChartsCreator"             << std::endl;
+        std::wcout << L" 11. ChartsViewer"              << std::endl;
         std::wcout << std::endl;
-        sn_generator.set_software_type(static_cast<navicat_software_type>(read_int(0, 9, L"(Input index)> ", L"Invalid index.")));
+        sn_generator.set_software_type(static_cast<navicat_software_type>(read_int(0, 11, L"(Input index)> ", L"Invalid index.")));
         std::wcout << std::endl;
 
         std::wcout << L"[*] Select product language:"   << std::endl;
@@ -96,7 +98,7 @@ namespace nkg {
         std::wcout << std::endl;
 
         std::wcout << L"[*] Input major version number:" << std::endl;
-        sn_generator.set_software_version(read_int(11, 16, 16, L"(range: 11 ~ 16, default: 16)> ", L"Invalid number."));
+        sn_generator.set_software_version(read_int(1, 16, 16, L"(range: 1 ~ 16, default: 16)> ", L"Invalid number."));
         std::wcout << std::endl;
 
         return sn_generator;
@@ -120,7 +122,7 @@ namespace nkg {
         std::wcout << std::endl;
 
         std::wcout << L"[*] Input major version number:" << std::endl;
-        sn_generator.set_software_version(read_int(11, 16, 16, L"(range: 11 ~ 16, default: 16)> ", L"Invalid number."));
+        sn_generator.set_software_version(read_int(1, 16, 16, L"(range: 1 ~ 16, default: 16)> ", L"Invalid number."));
         std::wcout << std::endl;
 
         return sn_generator;
